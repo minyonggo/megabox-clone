@@ -1,1 +1,56 @@
 @charset "UTF-8";
+
+/* 전체 레이아웃 */
+#header {
+    height: 63px;
+    border-bottom: 1px solid #c6c6c6;
+    /*background-color: rgba(170, 212, 253, 0.1);*/
+}
+
+/* 컨테이너 레이아웃 */
+.container {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    /*background-color: rgba(0,0,0,0.1);*/
+}
+
+/* row 레이아웃 */
+.row {padding: 0 24px;}
+
+/* header 레이아웃 */
+.header {}
+.header h1 {float: left;}
+.header h1 a {}
+.header h1 a img.logo {
+    display: inline-block;
+    width: 155px;
+    padding: 15px 8px 5px 0;
+}
+.header h1 a img.logo-sub {
+    position: absolute; left: 194px; top: 24px;
+    width: 123px;
+}
+.header .header_nav {
+    float: right;
+}
+.header .header_nav ul {
+    border-left: 1px solid #c6c6c6;
+}
+.header .header_nav ul li {
+    display: inline-block;
+    width: 103px;
+    border-right: 1px solid #c6c6c6;
+    text-align: center;
+}
+.header .header_nav ul li a {
+    display: inline-block;
+    padding: 19px 10px;
+    font-size: 17px; font-weight: 600; color: #444;
+}
+
+/* 반응형 media query */
+/* width : 0 ~ 1280px */
+@media (max-width:1285px){
+    .container {width: 100%;}
+}
