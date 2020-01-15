@@ -2,10 +2,12 @@
 
 /* 전체 레이아웃 */
 #header {
-    height: 63px;
     background-color: #fff;
     border-bottom: 1px solid #c6c6c6;
-    /*background-color: rgba(170, 212, 253, 0.1);*/
+}
+#hamNav {
+    display: none;
+    position: absolute; top: 6px; right: 14px;
 }
 #banner {position: relative;}
 #banner_slide {}
@@ -23,7 +25,16 @@
 }
 
 /* row 레이아웃 */
-.row {padding: 0 24px;}
+.row {padding: 0 28px;}
+
+/* 모바일 햄버거 메뉴 */
+.ham {
+    display: block; width: 35px; height: 28px; padding: 10px 7px;
+}
+.ham span {
+    display: block; width: 25px; height: 4px; margin: 4px auto;
+    background-color: #39106a;
+}
 
 /* header 레이아웃 */
 .header {}
@@ -130,4 +141,51 @@
 /* width : 0 ~ 1280px */
 @media (max-width:1285px){
     .container {width: 100%;}
+
+    /* 헤더 반응형 */
+    .header .header_nav ul li {width: 93px;}
+    .header .header_nav ul li a {font-size: 15px; padding-top: 17px;}
+    .header h1 a img.logo {padding-top: 13.5px; padding-right: 0;}
+    .header h1 a img.logo-sub {top: 23px;}
+}
+
+/* width : 0 ~ 1024px */
+@media (max-width:1024px){
+    .row {padding: 0 24px;}
+
+    /* 헤더 반응형 */
+    .header h1 {float: none; text-align: center;}
+    .header h1 a img.logo {padding-bottom: 9.5px;}
+    .header h1 a img.logo-sub {
+        position: absolute; left: 26px; top: 23px;
+        width: 123px;
+    }
+    #hamNav {display: block;}
+    .header .header_nav {display: none;}    
+}
+
+/* width : 0 ~ 960px */
+@media (max-width:960px){
+
+}
+
+/* width : 0 ~ 768px */
+@media (max-width:768px){
+    .row {padding: 0 16px;}
+
+    /* 헤더 반응형 */
+    .header h1 {text-align: left;}
+    .header .header_nav {display: none;}
+    .header h1 a img.logo-sub {display: none;}
+    #hamNav {right: 6px;}
+}
+
+/* width : 0 ~ 480px */
+@media (max-width:480px){
+
+}
+
+/* width : 0 ~ 320px */
+@media (max-width:320px){
+
 }
