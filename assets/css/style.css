@@ -199,6 +199,24 @@
 
     /* 배너 반응형 */
     .banner_slide .swiper-container {height: 400px;}
+
+    .banner_menu .menu_right ul:last-child li.box {
+        margin-right: 15px;
+        border: 1px solid #fff;
+        background-color: rgba(0,0,0,0.5);
+        transition: all 0.3s ease;
+    }
+    .banner_menu .menu_right ul:last-child li.box:last-child {
+        margin-right: 0;
+    }
+    .banner_menu .menu_right ul:last-child li.box a {
+        padding: 4px 8px;
+        font-size: 14px; color: white;
+    }
+    .banner_menu .menu_right ul:last-child li.box a:hover {
+        background: #fff; border-color: #000; color: #000;
+    }
+    
 }
 
 /* width : 0 ~ 480px */
