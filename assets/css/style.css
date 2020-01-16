@@ -75,6 +75,24 @@
 .banner_slide .swiper-slide.ss1 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover;}
 .banner_slide .swiper-slide.ss2 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover;}
 .banner_slide .swiper-slide.ss3 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover;}
+.banner_slide .swiper-slide .movie_description {
+    z-index: 3;
+    margin-top: 200px;
+}
+.banner_slide .swiper-slide strong {
+    display: block;
+    font-size: 62px; color: white; font-weight: normal;
+}
+.banner_slide .swiper-slide em {
+    display: block; margin: -20px 0 30px;
+    font-size: 59px; color: white; font-weight: 100; letter-spacing: normal;
+}
+.banner_slide .swiper-slide p {
+    display: inline-block;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    font-size: 27px; color: white;
+}
 
 
 .banner_menu ul li.line {
@@ -93,6 +111,7 @@
     color: #c1c1c1;
 }
 
+
 .banner_menu .menu_left {float: left; margin-top: 7px;}
 .banner_menu .menu_left ul li {
     display: inline-block; margin-right: 30px;
@@ -103,11 +122,21 @@
     transition: all 0.3s ease;
 }
 .banner_menu .menu_left ul li.total a {
-    display: inline-block; padding: 3px 10px;
+    display: inline-block; padding: 3px 7px;
     font-size: 14px;
+}
+.banner_menu .menu_left ul li.total a span.ham {
+    display: inline-block; width: 25px; height: 14px; padding: 0;
+}
+.banner_menu .menu_left ul li.total a span.ham span {
+    display: block; width: 15px; height: 2px; margin: 3px auto;
+    background-color: white;
 }
 .banner_menu .menu_left ul li.total a:hover {
     background: #fff; border-color: #000; color: #000;
+}
+.banner_menu .menu_left ul li.total a:hover span.ham span {
+    background-color: #000;
 }
 
 .banner_menu .menu_right {float: right;}
@@ -156,6 +185,9 @@
     .header .header_nav ul li a {font-size: 15px; padding-top: 17px;}
     .header h1 a img.logo {padding-top: 13.5px; padding-right: 0;}
     .header h1 a img.logo-sub {top: 23px;}
+
+    /* 배너 반응형 */
+    .banner_slide .swiper-button-next, .banner_slide .swiper-button-prev {display: none;}
 }
 
 /* width : 0 ~ 1024px */
@@ -181,6 +213,10 @@
 @media (max-width:960px){
     /* 배너 반응형 */
     .banner_slide .swiper-container {height: 500px;}
+    .banner_slide .swiper-slide .movie_description {margin-top: 170px;}
+    .banner_slide .swiper-slide strong {font-size: 37px;}
+    .banner_slide .swiper-slide em {font-size: 34px; margin: -10px 0 10px;}
+    .banner_slide .swiper-slide p {font-size: 16px;}
 }
 
 /* width : 0 ~ 768px */
@@ -199,7 +235,6 @@
 
     /* 배너 반응형 */
     .banner_slide .swiper-container {height: 400px;}
-
     .banner_menu .menu_right ul:last-child li.box {
         margin-right: 15px;
         border: 1px solid #fff;
@@ -216,6 +251,11 @@
     .banner_menu .menu_right ul:last-child li.box a:hover {
         background: #fff; border-color: #000; color: #000;
     }
+
+    .banner_slide .swiper-slide .movie_description {margin-top: 140px;}
+    .banner_slide .swiper-slide strong {font-size: 24px;}
+    .banner_slide .swiper-slide em {font-size: 21px; margin: -5px 0 5px;}
+    .banner_slide .swiper-slide p {font-size: 14px;}
     
 }
 
