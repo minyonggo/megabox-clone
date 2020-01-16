@@ -10,10 +10,11 @@
     position: absolute; top: 6px; right: 14px;
 }
 #banner {position: relative;}
-#banner_slide {}
+#banner_slide {z-index: 1;}
 #banner_menu {
     position: absolute; left: 0; top: 20px;
     width: 100%;
+    z-index: 2;
 }
 
 /* 컨테이너 레이아웃 */
@@ -68,6 +69,14 @@
 }
 
 /* banner 레이아웃 */
+
+.banner_slide {}
+.banner_slide .swiper-container {width: 100%; height: 600px;}
+.banner_slide .swiper-slide.ss1 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover;}
+.banner_slide .swiper-slide.ss2 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover;}
+.banner_slide .swiper-slide.ss3 {background: url(../img/swiper01.jpg) no-repeat center center; background-size: cover;}
+
+
 .banner_menu ul li.line {
     position: relative;
 }
@@ -162,11 +171,16 @@
     }
     #hamNav {display: block;}
     .header .header_nav {display: none;}    
+
+    /* 배너 반응형 */
+    .banner_menu .menu_right ul:first-child {display: none;}
+    .banner_menu .menu_left {display: none;}
 }
 
 /* width : 0 ~ 960px */
 @media (max-width:960px){
-
+    /* 배너 반응형 */
+    .banner_slide .swiper-container {height: 500px;}
 }
 
 /* width : 0 ~ 768px */
@@ -178,6 +192,13 @@
     .header .header_nav {display: none;}
     .header h1 a img.logo-sub {display: none;}
     #hamNav {right: 6px;}
+}
+
+/* width : 0 ~ 600px */
+@media (max-width:600px){
+
+    /* 배너 반응형 */
+    .banner_slide .swiper-container {height: 400px;}
 }
 
 /* width : 0 ~ 480px */
