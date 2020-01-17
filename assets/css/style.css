@@ -167,7 +167,7 @@
 /* 대표 영화 목록 */
 .movie_list {
     position: relative;
-    padding-top: 100px;
+    padding: 100px 0;
     text-align: center;
 }
 
@@ -196,8 +196,7 @@
 .movie_chart .poster {
     position: relative;
     float: left;
-    width: 292px;
-    margin-right: 16px;
+    box-sizing: border-box;
     border: 1px solid #c6c6c6;
 }
 .movie_chart .poster img {display: block;}
@@ -241,9 +240,9 @@
 .movie_chart .poster .info h3 span.all {background-position: -87px -125px;}
 
 .movie_chart .poster .info_btn {}
-.movie_chart .poster .info_btn li {display: inline-block;}
+.movie_chart .poster .info_btn li {display: inline-block; margin-right: 5px;}
 .movie_chart .poster .info_btn li a {
-    display: inline-block; padding: 15px 30px;
+    display: inline-block; padding: 15px 26px;
     background-color: #f2f2f2;
     font-size: 18px;
 }
