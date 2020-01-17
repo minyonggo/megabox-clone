@@ -384,9 +384,7 @@
         background-color: rgba(0,0,0,0.5);
         transition: all 0.3s ease;
     }
-    .banner_menu .menu_right ul:last-child li.box:last-child {
-        margin-right: 0;
-    }
+    .banner_menu .menu_right ul:last-child li.box:last-child {margin-right: 0;}
     .banner_menu .menu_right ul:last-child li.box a {
         padding: 4px 6px;
         font-size: 14px; color: white;
