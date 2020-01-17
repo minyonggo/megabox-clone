@@ -364,6 +364,7 @@
         background-color: #424242;
         z-index: 5;
     }
+    .movie_list .list_title li:last-child {margin-right: 0;}
     .movie_list li.active a {
         background-color: #fff;
         color: #666666;
@@ -431,11 +432,12 @@
 
 /* width : 0 ~ 480px */
 @media (max-width:480px){
-    .movie_list .list_title ul li {width: 50px; margin-right: 13px}
+    .movie_list .list_title ul li {width: 52px; margin-right: 6px}
     .movie_list .list_title ul li a {font-size: 11px;}
 }
 
 /* width : 0 ~ 320px */
 @media (max-width:320px){
-
+    .movie_list .list_title ul li {width: 46px; margin-right: 6px}
+    .movie_list .list_title ul li a {font-size: 9px;}
 }
