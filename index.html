@@ -701,7 +701,7 @@
 
     <script>
         /* banner_swiper JS */
-        let bannerSwiper = new Swiper('.banner_slide .swiper-container>div', {
+        let bannerSwiper = new Swiper('.banner_slide .swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -711,11 +711,11 @@
             },
             autoplay: {
                 delay: 5000,
-            },
+            }
         });
 
         /* movie_list swiper JS */
-        let swiper = new Swiper('.movie_list .swiper-container', {
+        let movieSwiper = new Swiper('.movie_list .swiper-container', {
             slidesPerView: 4,
             spaceBetween: 16,
             mousewheel: {
@@ -724,10 +724,15 @@
             keyboard: {
                 enabled: true,
                 onlyInViewport: false,
+            },
+            breakpoints : {
+                600 : {slidesPerView:1.4, spaceBetween:24},
+                768 : {slidesPerView:2, spaceBetween:24},
+                960 : {slidesPerView:3, spaceBetween:24},
             }
         });
 
-        /* movie_list JavaScript */
+        /* movie title_list JavaScript */
 
         $('.movie_chart>div').hide();
         $('.movie_chart>div').first().show();
