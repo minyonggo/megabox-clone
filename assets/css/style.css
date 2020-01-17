@@ -16,6 +16,7 @@
     width: 100%;
     z-index: 2;
 }
+#movie_list {}
 
 /* 컨테이너 레이아웃 */
 .container {
@@ -79,18 +80,20 @@
     z-index: 3;
     margin-top: 200px;
 }
+.banner_slide .swiper-slide .movie_description h2 {
+    display: inline-block; 
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
 .banner_slide .swiper-slide strong {
     display: block;
     font-size: 62px; color: white; font-weight: normal;
 }
 .banner_slide .swiper-slide em {
-    display: block; margin: -20px 0 30px;
+    display: block; margin-top: -15px; padding-bottom: 30px;
     font-size: 59px; color: white; font-weight: 100; letter-spacing: normal;
 }
 .banner_slide .swiper-slide p {
-    display: inline-block;
     padding-top: 20px;
-    border-top: 1px solid rgba(255,255,255,0.3);
     font-size: 27px; color: white;
 }
 
@@ -111,7 +114,6 @@
     color: #c1c1c1;
 }
 
-
 .banner_menu .menu_left {float: left; margin-top: 7px;}
 .banner_menu .menu_left ul li {
     display: inline-block; margin-right: 30px;
@@ -125,18 +127,8 @@
     display: inline-block; padding: 3px 7px;
     font-size: 14px;
 }
-.banner_menu .menu_left ul li.total a span.ham {
-    display: inline-block; width: 25px; height: 14px; padding: 0;
-}
-.banner_menu .menu_left ul li.total a span.ham span {
-    display: block; width: 15px; height: 2px; margin: 3px auto;
-    background-color: white;
-}
 .banner_menu .menu_left ul li.total a:hover {
     background: #fff; border-color: #000; color: #000;
-}
-.banner_menu .menu_left ul li.total a:hover span.ham span {
-    background-color: #000;
 }
 
 .banner_menu .menu_right {float: right;}
@@ -172,7 +164,88 @@
     color: #fff;
 }
 
+/* 대표 영화 목록 */
+.movie_list {
+    position: relative;
+    padding-top: 100px;
+    text-align: center;
+}
 
+.movie_list .list_title {margin-bottom: 60px;}
+.movie_list .list_title ul {overflow: hidden; margin: 0 auto; display: inline-block;}
+.movie_list .list_title ul>li {float: left;}
+.movie_list .list_title li {
+    border-top: 1px solid #c6c6c6;
+    border-right: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+    
+}
+.movie_list .list_title li a {
+    display: block; width: 210px; padding: 15px 0;
+    font-size: 18px; font-weight: 600; color: #666666; text-align: center;
+}
+.movie_list .list_title li:first-child a {
+    border-left: 1px solid #c6c6c6;
+}
+.movie_list li.active a {
+    background-color: #666666;
+    color: white;
+}
+
+.movie_chart {overflow: hidden;}
+.movie_chart .poster {
+    position: relative;
+    float: left;
+    width: 292px;
+    margin-right: 16px;
+    border: 1px solid #c6c6c6;
+}
+.movie_chart .poster img {display: block;}
+.movie_chart .poster:nth-child(4n) {
+    margin-right: 0;
+}
+
+.movie_chart .poster .rank {
+    position: absolute; left: 3px; top: 20px;
+    width: 50px; height: 50px;
+    background-color: #38116a;
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.5);
+}
+.movie_chart .poster .rank strong {
+    line-height: 50px; font-size: 25px; color: #fff;
+}
+
+.movie_chart .poster .mx_boutique {
+    position: absolute; right: 17px; top: 17px;
+}
+.movie_chart .poster .mx_boutique span {
+    display: block; width: 103px; height: 25px;
+}
+.movie_chart .poster .mx_boutique span.m {background-position: 0 -75px;}
+.movie_chart .poster .mx_boutique span.b {background-position: 0 -100px;}
+
+.movie_chart .poster .info {padding: 17px;}
+.movie_chart .poster .info h3 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 30px; font-weight: 700; color: #333333;
+}
+.movie_chart .poster .info h3 span {
+    display: inline-block; width: 29px; height: 29px; margin-top: 9px; margin-right: 5px;
+    vertical-align: -2px;
+}
+.movie_chart .poster .info h3 span.all {background-position: -87px -125px;}
+.movie_chart .poster .info h3 span.a12 {background-position: -58px -125px;}
+.movie_chart .poster .info h3 span.a15 {background-position: 0px -125px;}
+.movie_chart .poster .info h3 span.a19 {background-position: -29px -125px;}
+
+.movie_chart .poster .info_btn {}
+.movie_chart .poster .info_btn li {display: inline-block;}
+.movie_chart .poster .info_btn li a {
+    display: inline-block; padding: 15px 30px;
+    background-color: #f2f2f2;
+    font-size: 18px;
+}
 
 
 /* 반응형 media query */
@@ -212,10 +285,10 @@
 /* width : 0 ~ 960px */
 @media (max-width:960px){
     /* 배너 반응형 */
-    .banner_slide .swiper-container {height: 500px;}
+    .banner_slide .swiper-container {height: 400px;}
     .banner_slide .swiper-slide .movie_description {margin-top: 170px;}
     .banner_slide .swiper-slide strong {font-size: 37px;}
-    .banner_slide .swiper-slide em {font-size: 34px; margin: -10px 0 10px;}
+    .banner_slide .swiper-slide em {font-size: 34px; margin-top: -10px; padding-bottom: 10px;}
     .banner_slide .swiper-slide p {font-size: 16px;}
 }
 
@@ -234,9 +307,9 @@
 @media (max-width:600px){
 
     /* 배너 반응형 */
-    .banner_slide .swiper-container {height: 400px;}
+    .banner_slide .swiper-container {height: 300px;}
     .banner_menu .menu_right ul:last-child li.box {
-        margin-right: 15px;
+        margin-right: 10px;
         border: 1px solid #fff;
         background-color: rgba(0,0,0,0.5);
         transition: all 0.3s ease;
@@ -245,7 +318,7 @@
         margin-right: 0;
     }
     .banner_menu .menu_right ul:last-child li.box a {
-        padding: 4px 8px;
+        padding: 4px 6px;
         font-size: 14px; color: white;
     }
     .banner_menu .menu_right ul:last-child li.box a:hover {
@@ -254,7 +327,7 @@
 
     .banner_slide .swiper-slide .movie_description {margin-top: 140px;}
     .banner_slide .swiper-slide strong {font-size: 24px;}
-    .banner_slide .swiper-slide em {font-size: 21px; margin: -5px 0 5px;}
+    .banner_slide .swiper-slide em {font-size: 21px; margin-top: -5px; padding-bottom: 5px;}
     .banner_slide .swiper-slide p {font-size: 14px;}
     
 }
