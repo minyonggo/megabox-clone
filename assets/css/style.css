@@ -433,7 +433,8 @@
 
 /* width : 0 ~ 480px */
 @media (max-width:480px){
-
+    .movie_list .list_title ul li {width: 50px; margin-right: 13px}
+    .movie_list .list_title ul li a {font-size: 11px;}
 }
 
 /* width : 0 ~ 320px */
