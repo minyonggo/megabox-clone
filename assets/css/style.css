@@ -438,7 +438,7 @@
     }
 
     /* 이벤트 레이아웃 반응형 */
-    .mega_event {background-color: #fff;}
+    .mega_event {background-color: #fff; padding-bottom: 30px;}
     .mega_event h2 {padding-top: 0; line-height: -5px;}
     #mega_event .row {margin: 24px; padding: 24px; background-color: #fff;}
     .mega_event .left_side {width: 100%;}
