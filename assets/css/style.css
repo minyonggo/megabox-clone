@@ -191,7 +191,7 @@
     color: white;
 }
 
-.movie_chart {overflow: hidden;}
+.movie_chart {overflow: hidden; position: relative; z-index: 20;}
 .movie_chart .poster {
     position: relative;
     float: left;
@@ -215,7 +215,7 @@
 }
 
 .movie_chart .poster .mx_boutique {
-    position: absolute; right: 17px; top: 17px;
+    position: absolute; right: 5px; top: 17px;
 }
 .movie_chart .poster .mx_boutique span {
     display: block; width: 103px; height: 25px;
@@ -228,6 +228,7 @@
     text-align: left;
     margin-bottom: 20px;
     font-size: 30px; font-weight: 700; color: #333333;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .movie_chart .poster .info h3 span {
     float:left; width: 29px; height: 29px; margin-top: 9px; margin-right: 5px;
@@ -348,7 +349,7 @@
         z-index: 4;
     }
     .movie_list .list_title ul li {
-        width: 90px;
+        width: auto;
         border: 0; margin-right: 30px;
     }
     .movie_list .list_title li:first-child a {border-left: 0;}
@@ -400,14 +401,27 @@
     .banner_slide .swiper-slide p {font-size: 14px;}
 
     /* movie_list 반응형 */
+    #movie_list .row {
+        position: relative;
+        margin: 8px 0 8px 8px; padding: 16px 0 16px 16px;
+        background-color: #fff;
+    }
+    #movie_list .row::after {
+        content :''; width: 8px; height: 100%;
+        position: absolute; top: 0; right: 0; z-index: 10;
+        background-color: #d9d7e0;
+    
+    }
     .movie_list h2.ir_so {
         margin-bottom: 5px;
         line-height: 15px; font-size: 15px; white-space: -5px;
     }
     .movie_list .list_title {margin-bottom: 20px;}
-    .movie_list .list_title ul li {width: 70px; margin-right: 17px}
+    .movie_list .list_title ul {margin-right: 30px; box-sizing: border-box;}
+    .movie_list .list_title ul li {margin-right: 17px}
     .movie_list .list_title ul li a {font-size: 14px;}
 
+    .movie_chart .poster .info {background-color: #fff;}
     .movie_chart .poster .info h3 {
         text-align: center;
         margin-bottom: 10px;
@@ -434,10 +448,17 @@
 @media (max-width:480px){
     .movie_list .list_title ul li {width: 52px; margin-right: 6px}
     .movie_list .list_title ul li a {font-size: 11px;}
+    /* movie_list rank 반응형 */
+    .movie_chart .poster .rank {
+        width: 30px; height: 30px;
+    }
+    .movie_chart .poster .rank strong {
+        line-height: 30px; font-size: 18px;
+    }
 }
 
 /* width : 0 ~ 320px */
 @media (max-width:320px){
-    .movie_list .list_title ul li {width: 46px; margin-right: 6px}
+    .movie_list .list_title ul li {margin-right: 6px}
     .movie_list .list_title ul li a {font-size: 9px;}
 }
