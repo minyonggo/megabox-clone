@@ -314,13 +314,13 @@
 
 /* 새로운 영화 레이아웃 */
 .new {
-    position: relative;
     padding: 100px 0;
 }
 .new h2 {
     margin-bottom: 20px;
     font-size: 30px; font-weight: 500;
 }
+.new .new_movie {position: relative;}
 .new .new_left {
     position: relative;
     height: 500px; margin-right: 423px;
@@ -334,7 +334,7 @@
 .new .new_left .play .st1 {fill: #fff;}
 
 .new .new_right {
-    position: absolute; right: 0; top: 165px;
+    position: absolute; right: 0; top: 0;
     width: 400px; height: 500px;
     padding: 34px; box-sizing: border-box;
     background: #f0f0f0;
@@ -352,6 +352,14 @@
 .new .new_right .star .star0 {background-position: -374px 0;}
 
 .new .new_right .summary {font-size: 14px;}
+.new .new_right .summary .bar {position: relative;}
+.new .new_right .summary .bar::after {
+    content: '';
+    display: inline-block; width: 1px; height: 15px;
+    vertical-align: -3px;
+    background-color: #838282;
+    margin: 0 10px;
+}
 .new .new_right .genre {padding-bottom: 3px;}
 .new .new_right .age {padding-bottom: 10px;}
 .new .new_right .desc {
