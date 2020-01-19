@@ -339,7 +339,7 @@
     padding: 34px; box-sizing: border-box;
     background: #f0f0f0;
 }
-.new .new_right .title {font-size: 28px; color: #000;}
+.new .new_right .title {font-size: 28px; font-weight: 500; color: black;}
 .new .new_right .release {font-size: 12px; color: #333;}
 .new .new_right .star {padding: 13px 0;}
 .new .new_right .star strong {
@@ -347,9 +347,9 @@
     font-size: 15px;
 }
 .new .new_right .star span {display: inline-block; width: 20px; height: 20px; vertical-align: -3px;}
+.new .new_right .star .star0 {background-position: -374px 0;}
 .new .new_right .star .star1 {background-position: -393px 0;}
 .new .new_right .star .star2 {background-position: -412px 0;}
-.new .new_right .star .star0 {background-position: -374px 0;}
 
 .new .new_right .summary {font-size: 14px;}
 .new .new_right .summary .bar {position: relative;}
@@ -395,14 +395,28 @@
     width: 100%;
     margin-top: 2%;
 }
+
 .new .new_right .btn {
     overflow: hidden;
     margin-top: 2%;
     text-align: center;
 }
-.new .new_right .btn a {float: left; width: 49%; box-sizing: border-box; display: block; padding: 10px 30px 12px 30px;}
-.new .new_right .btn a.white {background-color: #fff; margin-right: 2%; color: #3a0e6a; border: 1px solid #3a0e6a;}
-.new .new_right .btn a.purple {background-color: #3a0e6a; color: #fff; border: 1px solid #6e40c4;}
+.new .new_right .btn button {
+    float: left;
+    display: block; width: 49%;
+    box-sizing: border-box; padding: 10px 30px 12px 30px;
+}
+.new .new_right .btn button.white {
+    margin-right: 2%;
+    border: 1px solid #3a0e6a;
+    background-color: #fff;
+    color: #3a0e6a;
+}
+.new .new_right .btn button.purple {
+    border: 1px solid #6e40c4;
+    background-color: #3a0e6a;
+    color: #fff;
+}
 
 /* 반응형 media query */
 /* width : 0 ~ 1280px */
