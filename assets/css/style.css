@@ -369,20 +369,6 @@
 }
 
 .new .new_right .select {overflow: hidden;}
-.new .new_right .select .ui_select2 {
-    width: 100%; height: 36px;
-    box-sizing: border-box; padding: 0 10px;
-    background: #2c2f34 url(../img/down.svg) no-repeat right 10px center; background-size: 10px;
-    color: white;
-    border: 0;
-}
-.new .new_right .select .ui_input3 {
-    width: 100%; height: 36px;
-    padding: 0 10px;
-    background: #2c2f34;
-    border: 0;
-    color: #fff;
-}
 .new .new_right .select .s1 {
     float: left;
     width: 49%; margin-right: 2%;
@@ -474,6 +460,7 @@
     .movie_list .list_title li a {
         width: 100%; box-sizing: border-box;
     }
+    
     /* 오프닝 레이아웃 반응형 */
     .mega_opening {padding: 50px 0;}
     .mega_opening .desc {font-size: 25px;}
