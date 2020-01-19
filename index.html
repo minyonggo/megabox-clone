@@ -788,59 +788,63 @@
                             </ul>
                             <!-- //summary -->
 
-                            <div class="select">
-                                <div class="s1">
-                                    <label for="udate" class="ir_so">날짜</label>
-                                    <input type="text" id="udate" name="udate" value="2019년 1월 25일" class="ui_select2">
-                                </div>
-                                <!-- //select1 -->
+                            <form id="reservation">
+                                <fieldset class="select">
+                                    <legend class="ir_so">Select Menu</legend>
+                                    <div class="s1">
+                                        <label for="udate" class="ir_so">날짜</label>
+                                        <input type="text" id="udate" name="udate" value="2019년 1월 25일" class="ui_select2">
+                                    </div>
+                                    <!-- //select1 -->
 
-                                <div class="s2">
-                                    <label for="utime" class="ir_so"> 시간</label>
-                                    <select id="utime" name="utime" class="ui_select2">
-                                        <option value="오전 0:00">오전 0:00</option>
-                                        <option value="오전 1:00">오전 1:00</option>
-                                        <option value="오전 2:00">오전 2:00</option>
-                                        <option value="오전 3:00">오전 3:00</option>
-                                        <option value="오전 4:00">오전 4:00</option>
-                                        <option value="오전 5:00">오전 5:00</option>
-                                        <option value="오전 6:00">오전 6:00</option>
-                                        <option value="오전 7:00">오전 7:00</option>
-                                        <option value="오전 8:00">오전 8:00</option>
-                                        <option value="오전 9:00">오전 9:00</option>
-                                        <option value="오전 10:00">오전 10:00</option>
-                                        <option value="오전 11:00">오전 11:00</option>
-                                        <option value="오전 12:00">오전 12:00</option>
-                                        <option value="오후 1:00">오후 1:00</option>
-                                        <option value="오후 2:00">오후 2:00</option>
-                                        <option value="오후 3:00">오후 3:00</option>
-                                        <option value="오후 4:00">오후 4:00</option>
-                                        <option value="오후 5:00">오후 5:00</option>
-                                        <option value="오후 6:00">오후 6:00</option>
-                                        <option value="오후 7:00">오후 7:00</option>
-                                        <option value="오후 8:00">오후 8:00</option>
-                                        <option value="오후 9:00">오후 9:00</option>
-                                        <option value="오후 10:00">오후 10:00</option>
-                                        <option value="오후 11:00">오후 11:00</option>
-                                        <option value="오후 12:00">오후 12:00</option>
-                                    </select>
-                                </div>
-                                <!-- //select2 -->
+                                    <div class="s2">
+                                        <label for="utime" class="ir_so"> 시간</label>
+                                        <select id="utime" name="utime" class="ui_select2">
+                                            <option value="오전 0:00">오전 0:00</option>
+                                            <option value="오전 1:00">오전 1:00</option>
+                                            <option value="오전 2:00">오전 2:00</option>
+                                            <option value="오전 3:00">오전 3:00</option>
+                                            <option value="오전 4:00">오전 4:00</option>
+                                            <option value="오전 5:00">오전 5:00</option>
+                                            <option value="오전 6:00">오전 6:00</option>
+                                            <option value="오전 7:00">오전 7:00</option>
+                                            <option value="오전 8:00">오전 8:00</option>
+                                            <option value="오전 9:00">오전 9:00</option>
+                                            <option value="오전 10:00">오전 10:00</option>
+                                            <option value="오전 11:00">오전 11:00</option>
+                                            <option value="오전 12:00">오전 12:00</option>
+                                            <option value="오후 1:00">오후 1:00</option>
+                                            <option value="오후 2:00">오후 2:00</option>
+                                            <option value="오후 3:00">오후 3:00</option>
+                                            <option value="오후 4:00">오후 4:00</option>
+                                            <option value="오후 5:00">오후 5:00</option>
+                                            <option value="오후 6:00">오후 6:00</option>
+                                            <option value="오후 7:00">오후 7:00</option>
+                                            <option value="오후 8:00">오후 8:00</option>
+                                            <option value="오후 9:00">오후 9:00</option>
+                                            <option value="오후 10:00">오후 10:00</option>
+                                            <option value="오후 11:00">오후 11:00</option>
+                                            <option value="오후 12:00">오후 12:00</option>
+                                        </select>
+                                    </div>
+                                    <!-- //select2 -->
 
-                                <div class="s3">
-                                    <label for="utext" class="ir_so">주소 또는 도로명을 입력해주세요.</label>
-                                    <input type="text" id="utext" name="utext" class="ui_input3" placeholder="주소 또는 도로명을 입력해주세요.">
-                                </div>
-                                <!-- //select3 -->
+                                    <div class="s3">
+                                        <label for="utext" class="ir_so">주소 또는 도로명을 입력해주세요.</label>
+                                        <input type="text" id="utext" name="utext" class="ui_input3" placeholder="주소 또는 도로명을 입력해주세요.">
+                                    </div>
+                                    <!-- //select3 -->
 
-                            </div>
-                            <!-- //select -->
+                                </fieldset>
+                                <!-- //select -->
 
-                            <div class="btn">
-                                <a href="#" class="white">좌석확인</a>
-                                <a href="#" class="purple">예매하기</a>
-                            </div>
-                            <!-- //btn -->
+                                <fieldset class="btn">
+                                    <legend class="ir_so">button</legend>
+                                    <button class="white">좌석확인</a>
+                                    <button class="purple">예매하기</a>
+                                </fieldset>
+                                <!-- //btn -->
+                            </form>
 
                         </div>
                         <!-- //new_right -->
