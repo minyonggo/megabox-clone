@@ -502,6 +502,39 @@
 .card .card_content .card_list li a .card_desc p {
     font-size: 14px;
 }
+
+/* 고객센터 레이아웃 */
+.customer {}
+.customer h2 {
+    margin-bottom: 20px;
+    font-size: 30px; font-weight: 500;
+}
+.customer .customer_content {
+    border: 1px solid #dbdbdb;
+}
+.customer .customer_content ul li {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+.customer .customer_content ul li.customer1 {border-bottom: 1px solid #dbdbdb; border-right: 1px solid #dbdbdb;}
+.customer .customer_content ul li.customer2 {border-bottom: 1px solid #dbdbdb;}
+.customer .customer_content ul li.customer3 {border-right: 1px solid #dbdbdb;}
+.customer .customer_content ul li.customer4 {}
+
+.customer .customer_content ul li a {
+    display: block;
+    padding: 22.5px 17px;
+    text-align: center;
+}
+.customer .customer_content ul li a span {
+    display: block; width: 120px; height: 120px;
+    margin: 0 auto;
+}
+.customer .customer_content ul li a strong {
+    font-size: 18px; font-weight: 500; color: #666;
+}
+
 /* 반응형 media query */
 /* width : 0 ~ 1280px */
 @media (max-width:1285px){
