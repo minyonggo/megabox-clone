@@ -406,17 +406,13 @@
 
 /* 게시판 레이아웃 */
 .bulletin {}
-.bulletin>article {
+
+/* 공지사항 레이아웃 */
+.notice {
     float: left;
     width: 32%; margin-right: 2%;
     padding-bottom: 50px;
 }
-.bulletin>article:last-child {
-    margin-right: 0;
-}
-
-/* 공지사항 레이아웃 */
-.notice {}
 .notice h2 {
     margin-bottom: 20px;
     font-size: 30px; font-weight: 500;
@@ -470,20 +466,26 @@
 }
 
 /* 할인카드 레이아웃 */
-.card {}
+.card {
+    float: left;
+    width: 32%; margin-right: 2%;
+    padding-bottom: 50px;
+}
 .card h2 {
     margin-bottom: 20px;
     font-size: 30px; font-weight: 500;
 }
 .card .card_content {
     position: relative;
-    padding: 17px;
+    max-height: 388px;
+    box-sizing: border-box; padding: 17px;
     border: 1px solid #dbdbdb;
 }
 .card .card_content .card_list {}
 .card .card_content .card_list li {
     position: relative;
-    padding: 17px; margin-bottom: 17px;
+    min-height: 106px;
+    box-sizing: border-box; padding: 17px 17px 24px; margin-bottom: 17px;
     border: 1px solid #dbdbdb;
 }
 .card .card_content .card_list li:last-child {margin-bottom: 3px;}
@@ -497,14 +499,18 @@
     margin-left: 130px;
 }
 .card .card_content .card_list li a .card_desc strong {
-    font-size: 18px; color: #666666;
+    font-size: 16.5px; color: #666666;
 }
 .card .card_content .card_list li a .card_desc p {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 /* 고객센터 레이아웃 */
-.customer {}
+.customer {
+    float: left;
+    width: 32%; margin-right: 0%;
+    padding-bottom: 50px;
+}
 .customer h2 {
     margin-bottom: 20px;
     font-size: 30px; font-weight: 500;
@@ -567,6 +573,15 @@
     /* 배너 반응형 */
     .banner_menu .menu_right ul:first-child {display: none;}
     .banner_menu .menu_left {display: none;}
+
+    /* 헬프영역 반응형 */
+    .notice {width: 48%; margin-right: 2%;}
+    .card {width: 48%; margin-right: 0%;}
+    .card .card_content .card_list li a .card_desc {margin-top: 3px;}
+    .customer {width: 100%;}
+    .customer h2 {display: none;}
+    .customer .customer_content ul li {width: 25%;}
+    .customer .customer_content ul li.customer1, .customer .customer_content ul li.customer2, .customer .customer_content ul li.customer3 {border: 0;}
 }
 
 /* width : 0 ~ 960px */
@@ -695,6 +710,29 @@
         margin-bottom: 15px; padding-bottom: 10px;
         font-size: 25px; font-weight: 500;
     }
+
+    /* 헬프영역 반응형 */
+    #bulletin .row {margin: 24px; padding: 0;}
+    .notice {
+        float: none;
+        width: 100%;
+        box-sizing: border-box; padding: 24px; margin-bottom: 24px;
+        background-color: #fff;
+    }
+    .card {
+        float: none;
+        width: 100%;
+        box-sizing: border-box; padding: 24px; margin-bottom: 24px;
+        background-color: #fff;
+    }
+    .customer {
+        float: none;
+        box-sizing: border-box;
+        padding: 0 24px;
+        background-color: #fff;
+    }
+    .customer .customer_content {border: 0;}
+    .customer .customer_content ul li a strong {font-size: 15px;}
 }
 
 /* width : 0 ~ 600px */
@@ -780,6 +818,20 @@
     .new .new_right .title {font-size: 22px;}
     .new .new_right .select .s1 {width: 100%;}
     .new .new_right .select .s2 {width: 100%; margin-top: 2%;}
+
+    /* 헬프영역 반응형 */
+    #bulletin .row {margin: 8px;}
+    .notice {padding: 16px; margin-bottom: 8px;}
+    .card {padding: 16px; margin-bottom: 8px;}
+    .customer {padding: 0;}
+
+    .customer .customer_content ul li {width: 50%;}
+    .customer .customer_content ul li.customer1 {border-bottom: 1px solid #dbdbdb; border-right: 1px solid #dbdbdb;}
+    .customer .customer_content ul li.customer2 {border-bottom: 1px solid #dbdbdb;}
+    .customer .customer_content ul li.customer3 {border-right: 1px solid #dbdbdb;}
+
+    .customer .customer_content ul li a {padding: 15px 17px;}
+    .customer .customer_content ul li a span {width: 70px; height: 70px;}
 }
 
 /* width : 0 ~ 480px */
