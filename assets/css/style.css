@@ -719,11 +719,19 @@
         box-sizing: border-box; padding: 24px; margin-bottom: 24px;
         background-color: #fff;
     }
+    .notice h2 {
+        margin-bottom: 15px; padding-bottom: 10px;
+        font-size: 25px; font-weight: 500;
+    }
     .card {
         float: none;
         width: 100%;
         box-sizing: border-box; padding: 24px; margin-bottom: 24px;
         background-color: #fff;
+    }
+    .card h2 {
+        margin-bottom: 15px; padding-bottom: 10px;
+        font-size: 25px; font-weight: 500;
     }
     .customer {
         float: none;
@@ -824,6 +832,9 @@
     .notice {padding: 16px; margin-bottom: 8px;}
     .card {padding: 16px; margin-bottom: 8px;}
     .customer {padding: 0;}
+
+    .notice h2 {font-size: 15px; font-weight: 600; letter-spacing: normal;}
+    .card h2 {font-size: 15px; font-weight: 600; letter-spacing: normal;}
 
     .customer .customer_content ul li {width: 50%;}
     .customer .customer_content ul li.customer1 {border-bottom: 1px solid #dbdbdb; border-right: 1px solid #dbdbdb;}
