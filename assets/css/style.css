@@ -874,6 +874,7 @@
         padding: 5px 10px;
         font-size: 12px;
     }
+    .card .card_content .card_list li {margin-bottom: 12px;}
     .card .card_content .card_list li a img {width: 70px; top: 29px;}
     .card .card_content .card_list li a .card_desc {margin-left: 80px;}
     .card .card_content .card_list li a .card_desc strong {font-size: 14px;}
