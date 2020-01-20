@@ -733,6 +733,7 @@
         margin-bottom: 15px; padding-bottom: 10px;
         font-size: 25px; font-weight: 500;
     }
+    .card .card_content .card_list li a .card_desc {margin-top: 10px;}
     .customer {
         float: none;
         box-sizing: border-box;
@@ -864,6 +865,18 @@
     .new .new_right .summary .desc {
         height: 108px;
     }
+    .new .new_right .btn button {padding: 10px 15px;}
+
+    /* 헬프영역 반응형 */
+    .notice .notice_list {top: 50px; left: 10px;}
+    .notice .title h3 {
+        width: 60px;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .card .card_content .card_list li a img {width: 70px; top: 29px;}
+    .card .card_content .card_list li a .card_desc {margin-left: 80px;}
+    .card .card_content .card_list li a .card_desc strong {font-size: 14px;}
 }
 
 /* width : 0 ~ 320px */
