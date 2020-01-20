@@ -425,7 +425,6 @@
     position: relative;
     padding: 17px 17px 325px;
     border: 1px solid #dbdbdb;
-
 }
 .notice .all {}
 .notice .cinema {}
@@ -470,6 +469,39 @@
     color: #333333;
 }
 
+/* 할인카드 레이아웃 */
+.card {}
+.card h2 {
+    margin-bottom: 20px;
+    font-size: 30px; font-weight: 500;
+}
+.card .card_content {
+    position: relative;
+    padding: 17px;
+    border: 1px solid #dbdbdb;
+}
+.card .card_content .card_list {}
+.card .card_content .card_list li {
+    position: relative;
+    padding: 17px; margin-bottom: 17px;
+    border: 1px solid #dbdbdb;
+}
+.card .card_content .card_list li:last-child {margin-bottom: 3px;}
+.card .card_content .card_list li a {}
+.card .card_content .card_list li a img {
+    position: absolute; top: 17px; left: 17px;
+    display: block;
+    width: 115px;
+}
+.card .card_content .card_list li a .card_desc {
+    margin-left: 130px;
+}
+.card .card_content .card_list li a .card_desc strong {
+    font-size: 18px; color: #666666;
+}
+.card .card_content .card_list li a .card_desc p {
+    font-size: 14px;
+}
 /* 반응형 media query */
 /* width : 0 ~ 1280px */
 @media (max-width:1285px){
