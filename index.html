@@ -898,6 +898,8 @@
                                     </li>
                                 </ul>
                             </div>
+                            <!-- //notice_all -->
+
                             <div class="cinema">
                                 <a class="title" href="#"><h3>영화관 공지</h3></a>
                                 <ul class="notice_list">
@@ -931,12 +933,17 @@
                                     </li>
                                 </ul>
                             </div>
+                            <!-- //notice_cinema -->
+
                         </div>
                     </article>
+                    <!-- //notice -->
+
                 </div>
             </div>
         </div>
     </section>
+    <!-- //bulletin -->
 
     <!-- 자바스크립트 라이브러리 -->
     <script src="assets/js/jquery.min_1.12.4.js"></script>
@@ -992,6 +999,15 @@
             const prevSelectedIndex = prevSelectedList.index();
             $('.movie_chart>div').eq(prevSelectedIndex).hide();
             $('.movie_chart>div').eq(selectedIndex).show();
+        });
+
+        /* notice JavaScript */
+        $('.notice .title').on('click', function(event){
+            event.preventDefault();
+            const selectedTitle = $(this);
+            selectedTitle.parent().siblings().find('.notice_list').hide();
+            selectedTitle.parent().siblings().removeClass('active');
+            selectedTitle.parent().addClass('active').find('.notice_list').show();
         });
 
     </script>
