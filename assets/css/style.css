@@ -883,4 +883,6 @@
 @media (max-width:320px){
     .movie_list .list_title ul li {margin-right: 6px}
     .movie_list .list_title ul li a {font-size: 9px;}
+
+    .customer .customer_content ul li a span {width: 50px; height: 50px;}
 }
