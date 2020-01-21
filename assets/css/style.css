@@ -24,9 +24,9 @@ body {position: relative;}
 #mega_opening {}
 #new {}
 #bulletin {}
-#footer {position: relative;}
-#footer_sns {background-color: #222222;}
-#footer_infor {background-color: #222222;}
+#footer {}
+#footer_sns {background-color: #211f1f;}
+#footer_infor {background-color: #211f1f;}
 
 /* 컨테이너 레이아웃 */
 .container {
@@ -548,7 +548,7 @@ body {position: relative;}
 
 /* footer 레이아웃 */
 
-.footer_sns {position: absolute; top: 50px; right: 15px;}
+.footer_sns {position: absolute; top: 50px; right: 10px;}
 .footer_sns ul {}
 .footer_sns ul li {display: inline-block; margin-left: 3px;}
 .footer_sns ul li a {
