@@ -47,6 +47,14 @@
 <![endif]-->
 </head>
 <body>
+    <!-- skip_menu -->
+    <div id="skip">
+        <a rel="bookmark" href="#movie_list">최신 영화 정보</a>
+        <a rel="bookmark" href="#mega_event">MEGA EVENT</a>
+        <a rel="bookmark" href="#new">새로운 영화</a>
+    </div>
+    <!-- //skip_menu -->
+
     <header id="header">
         <div class="container">
             <div class="row">
@@ -1459,7 +1467,7 @@
             </div>
         </section>
         <!-- //footer_infor -->
-        
+
     </footer>
     <!-- //footer -->
 
@@ -1520,13 +1528,15 @@
         });
 
         /* notice JavaScript */
-        $('.notice .title').on('click', function(event){
+        let tabList = function(event){
             event.preventDefault();
             const selectedTitle = $(this);
             selectedTitle.parent().siblings().find('.notice_list').hide();
             selectedTitle.parent().siblings().removeClass('active');
             selectedTitle.parent().addClass('active').find('.notice_list').show();
-        });
+        }
+
+        $('.notice .title').click(tabList).focus(tabList);
 
     </script>
 </body>
